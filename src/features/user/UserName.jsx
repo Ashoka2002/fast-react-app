@@ -6,7 +6,7 @@ function UserName() {
   if (!userName) return null;
 
   return (
-    <div className="hidden text-xs font-semibold sm:block">{userName}</div>
+    <div className="hidden text-sm font-semibold sm:block">{userName}</div>
   );
 }
 
