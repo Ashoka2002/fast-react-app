@@ -9,6 +9,7 @@ import CreateOrder, {
   action as createOrderAction,
 } from "./features/order/CreateOrder";
 import AppLayout from "./ui/Applayout";
+import { action as priorityAction } from "./features/order/UpdatePrioritiy";
 
 const router = createBrowserRouter([
   {
@@ -27,6 +28,7 @@ const router = createBrowserRouter([
         path: "/order/:orderId",
         element: <Order />,
         loader: orderLoader,
+        action: priorityAction,
         errorElement: <Error />,
       },
       {
