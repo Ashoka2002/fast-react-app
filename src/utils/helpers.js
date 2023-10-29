@@ -1,4 +1,4 @@
-const INRPRICE = 10;
+const INRPRICE = 15;
 
 export function formatCurrency(value) {
   return new Intl.NumberFormat("en", {

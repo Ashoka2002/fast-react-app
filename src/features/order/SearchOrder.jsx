@@ -15,10 +15,10 @@ function SearchOrder() {
   return (
     <form onSubmit={handlesubmit}>
       <input
-        placeholder="Search order"
+        placeholder="Search order by id"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="w-40 rounded-full bg-yellow-100 px-4 py-1 text-sm text-stone-800 outline-none placeholder:text-stone-400  sm:w-52 "
+        className="w-40 rounded-full bg-yellow-100 px-2 py-1 text-xs tracking-tight text-stone-800 outline-none [word-spacing:-2px] placeholder:text-stone-400 sm:w-52 sm:px-4 sm:text-sm sm:tracking-normal  sm:[word-spacing:0px] "
       />
     </form>
   );
