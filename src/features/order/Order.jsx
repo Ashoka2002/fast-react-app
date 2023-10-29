@@ -9,8 +9,7 @@ import {
 import { getOrder } from "../../services/apiRestaurant";
 import { useFetcher, useLoaderData } from "react-router-dom";
 import OrderItem from "./OrderItem";
-import { useEffect, useState } from "react";
-import Button from "../../ui/Button";
+import { useEffect } from "react";
 import UpdatePrioritiy from "./UpdatePrioritiy";
 
 function Order() {
