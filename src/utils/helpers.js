@@ -1,8 +1,10 @@
+const INRPRICE = 10;
+
 export function formatCurrency(value) {
   return new Intl.NumberFormat("en", {
     style: "currency",
-    currency: "EUR",
-  }).format(value);
+    currency: "INR",
+  }).format(value * INRPRICE);
 }
 
 export function formatDate(dateStr) {
